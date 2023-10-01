@@ -1,0 +1,113 @@
+[
+    {
+      "coordinates": [
+        { "x": 50, "y": 50 },
+        { "x": 270, "y": 50 },
+        { "x": 260, "y": 260 },
+        { "x": 50, "y": 265 }
+      ],
+      "name": "Pillar 1",
+      "state": "Currently Extracting",
+      "color": "yellow"
+    },
+    {
+      "coordinates": [
+        { "x": 360, "y": 50 },
+        { "x": 570, "y": 50 },
+        { "x": 575, "y": 260 },
+        { "x": 360, "y": 260 }
+      ],
+      "name": "Pillar 2",
+      "state": "Extracted",
+      "color": "red"
+    },
+    {
+      "coordinates": [
+        { "x": 670, "y": 50 },
+        { "x": 880, "y": 50 },
+        { "x": 875, "y": 260 },
+        { "x": 670, "y": 260 }
+      ],
+      "name": "Pillar 3",
+      "state": "Not Extracting",
+      "color": "black"
+    },
+    {
+      "coordinates": [
+        { "x": 980, "y": 50 },
+        { "x": 1190, "y": 50 },
+        { "x": 1195, "y": 260 },
+        { "x": 980, "y": 260 }
+      ],
+      "name": "Pillar 4",
+      "state": "Currently Extracting",
+      "color": "yellow"
+    },
+    {
+      "coordinates": [
+        { "x": 1290, "y": 50 },
+        { "x": 1500, "y": 50 },
+        { "x": 1505, "y": 260 },
+        { "x": 1290, "y": 260 }
+      ],
+      "name": "Pillar 5",
+      "state": "Extracted",
+      "color": "red"
+    },
+    {
+      "coordinates": [
+        { "x": 50, "y": 360 },
+        { "x": 260, "y": 360 },
+        { "x": 265, "y": 575 },
+        { "x": 50, "y": 570 }
+      ],
+      "name": "Pillar 6",
+      "state": "Not Extracting",
+      "color": "black"
+    },
+    {
+      "coordinates": [
+        { "x": 365, "y": 360 },
+        { "x": 570, "y": 360 },
+        { "x": 570, "y": 570 },
+        { "x": 360, "y": 575 }
+      ],
+      "name": "Pillar 7",
+      "state": "Currently Extracting",
+      "color": "yellow"
+    },
+    {
+      "coordinates": [
+        { "x": 666, "y": 360 },
+        { "x": 880, "y": 360 },
+        { "x": 880, "y": 585 },
+        { "x": 670, "y": 570 }
+      ],
+      "name": "Pillar 8",
+      "state": "Extracted",
+      "color": "red"
+    },
+    {
+      "coordinates": [
+        { "x": 980, "y": 360 },
+        { "x": 1190, "y": 360 },
+        { "x": 1180, "y": 570 },
+        { "x": 980, "y": 570 }
+      ],
+      "name": "Pillar 9",
+      "state": "Not Extracting",
+      "color": "black"
+    },
+    {
+      "coordinates": [
+        { "x": 1290, "y": 360 },
+        { "x": 1510, "y": 360 },
+        { "x": 1500, "y": 570 },
+        { "x": 1290, "y": 570 }
+      ],
+      "name": "Pillar 10",
+      "state": "Currently Extracting",
+      "color": "yellow"
+    }
+  ]
+  
