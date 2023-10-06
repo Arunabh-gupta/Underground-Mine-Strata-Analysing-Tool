@@ -1,0 +1,22 @@
+/* Add this CSS in your component's CSS or in a separate CSS file */
+.circle {
+    transition: fill 0.3s;
+    cursor: pointer;
+  }
+  
+  .circle.blinking {
+    animation: blink 1s linear infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      fill: transparent;
+    }
+    50% {
+      fill: #ffe873; /* Change the color to match your design */
+    }
+    100% {
+      fill: transparent;
+    }
+  }
+  

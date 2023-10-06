@@ -1,0 +1,89 @@
+
+/* popup.css */
+
+/* Style for the modal background overlay */
+.PopUp_Background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure the modal is on top of other content */
+}
+
+/* Style for the modal container */
+.PopUp_container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  text-align: left;
+  position: relative; /* Position relative for absolute positioning of close button */
+}
+
+/* Style for the close button */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.closeButton button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none; /* Remove button outline */
+}
+
+/* Style for the title */
+.title {
+  margin-top: 10px;
+}
+
+/* Style for the instrument list */
+.Instrument_list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style for individual list items */
+.Instrument_list li {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the instrument name */
+.Instrument_list li span {
+  flex-grow: 1; /* Allow the name to take up available space */
+}
+
+/* Style for the buttons */
+.Instrument_list li button {
+  margin-left: 10px;
+  background-color: #666666; /* Example button background color */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Add more styles as needed for your specific design */
+
+/* Style for the pillar name */
+.Pillar_Name {
+  margin-top: 10px;
+}
+
+/* Style for the pillar state */
+.Pillar_State {
+  margin-top: 10px;
+}
+  

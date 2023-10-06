@@ -1,0 +1,61 @@
+[
+  {
+    "coordinate": { "x": 310, "y": 310 },
+    "instruments": [
+      { "name": "Remote Convergence Indicator", "reference_no": 123 }
+    ],
+    "location": "17L-1A"
+  },
+  {
+    "coordinate": { "x": 625, "y": 310 },
+    "instruments": [
+      { "name": "Auto Warning Tell Tale", "reference_no": 789 }
+    ],
+    "location": "17L-1B"
+  },
+  {
+    "coordinate": { "x": 925, "y": 310 },
+    "instruments": [
+      { "name": "Dual Height Tell Tale", "reference_no": 1011 }
+    ],
+    "location": "17L-1C"
+  },
+  {
+    "coordinate": { "x": 310, "y": 620 },
+    "instruments": [
+      { "name": "Auto Warning Tell Tale", "reference_no": 1213 },
+      { "name": "Dual Height Tell Tale", "reference_no": 1415 }
+    ],
+    "location": "17L-2A"
+  },
+  {
+    "coordinate": { "x": 625, "y": 620 },
+    "instruments": [
+      { "name": "Rotary Tell Tale", "reference_no": 1617 }
+    ],
+    "location": "17L-2B"
+  },
+  {
+    "coordinate": { "x": 930, "y": 635 },
+    "instruments": [
+      { "name": "Remote Convergence Indicator", "reference_no": 1819 },
+      { "name": "Auto Warning Tell Tale", "reference_no": 2021 }
+    ],
+    "location": "17L-2C"
+  },
+  {
+    "coordinate": { "x": 1230, "y": 620 },
+    "instruments": [
+      { "name": "Rotary Tell Tale", "reference_no": 2223 }
+    ],
+    "location": "17L-3A"
+  },
+  {
+    "coordinate": { "x": 1245, "y": 325 },
+    "instruments": [
+      { "name": "Rotary Tell Tale", "reference_no": 2425 },
+      { "name": "Dual Height Tell Tale", "reference_no": 2627 }
+    ],
+    "location": "17L-3B"
+  }
+]

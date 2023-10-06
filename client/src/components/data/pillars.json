@@ -8,7 +8,7 @@
       ],
       "name": "Pillar 1",
       "state": "Currently Extracting",
-      "color": "yellow"
+      "color": "#ffe873"
     },
     {
       "coordinates": [
@@ -19,7 +19,7 @@
       ],
       "name": "Pillar 2",
       "state": "Extracted",
-      "color": "red"
+      "color": "#ff6161"
     },
     {
       "coordinates": [
@@ -41,7 +41,7 @@
       ],
       "name": "Pillar 4",
       "state": "Currently Extracting",
-      "color": "yellow"
+      "color": "#ffe873"
     },
     {
       "coordinates": [
@@ -52,7 +52,7 @@
       ],
       "name": "Pillar 5",
       "state": "Extracted",
-      "color": "red"
+      "color": "#ff6161"
     },
     {
       "coordinates": [
@@ -74,7 +74,7 @@
       ],
       "name": "Pillar 7",
       "state": "Currently Extracting",
-      "color": "yellow"
+      "color": "#ffe873"
     },
     {
       "coordinates": [
@@ -85,7 +85,7 @@
       ],
       "name": "Pillar 8",
       "state": "Extracted",
-      "color": "red"
+      "color": "#ff6161"
     },
     {
       "coordinates": [
@@ -107,7 +107,7 @@
       ],
       "name": "Pillar 10",
       "state": "Currently Extracting",
-      "color": "yellow"
+      "color": "#ffe873"
     }
   ]
   
