@@ -1,0 +1,52 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .dropdown {
+    display: flex;
+    align-items: center;
+  }
+  .locationOption {
+    display: flex;
+    align-items: center;
+  }
+  .roofFallOption {
+    display: flex;
+    align-items: center;
+  }
+  label {
+    margin-right: 10px;
+  }
+
+  
+  select {
+    padding: 5px;
+    border: 1px solid #555;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  select option {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  /* Style for the selected option in the dropdown */
+  select option:checked {
+    background-color: #555;
+  }
+  
+  /* Add some margin to separate the dropdowns */
+  .dropdown + .dropdown {
+    margin-left: 20px;
+  }
+  

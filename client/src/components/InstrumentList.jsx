@@ -1,12 +1,27 @@
 import React, { useState } from 'react'
 import "./css/popup.css";
 import Instrument_Component from './Instrument_Component';
+import Show_Entry from './Show_Entry_Components/Show_Entry';
 function InstrumentList({ MarkerData, closeList }) {
-  const [SelectedInstrumentName, setSelectedInstrumentName] = useState("");
-  const [SelectedInstrumentRefNo, setSelectedInstrumentRefNo] = useState(0);
-  const OpenForm = (name, RefNo) => {
-    setSelectedInstrumentName(name);
-    setSelectedInstrumentRefNo(RefNo)
+  const [openForm, setopenForm] = useState(false);
+  const [openEntries, setopenEntries] = useState(false);
+  const [info, setInfo] = useState({});
+  const OpenFormFunc = (name, RefNo) => {
+    setopenForm(true);
+    setInfo({
+      name: name,
+      RefNo: RefNo,
+      Location: MarkerData.location 
+    });
+  }
+  const OpenEntriesFunc = (name, RefNo) => {
+    setopenEntries(true);
+    setInfo({
+      name: name,
+      RefNo: RefNo,
+      Location: MarkerData.location 
+    });
+    
   }
   return (
     <>
@@ -24,14 +39,19 @@ function InstrumentList({ MarkerData, closeList }) {
                 <li key={index}>
                   <span>{data.name}</span>
                   <span>{data.reference_no}</span>
-                  <button>Show Entries</button>
-                  <button onClick={() => OpenForm(data.name, data.reference_no)}>Add Entry</button>
+                  <button onClick={() => OpenEntriesFunc(data.name, data.reference_no)}>Show Entries</button>
+                  <button onClick={() => OpenFormFunc(data.name, data.reference_no)}>Add Entry</button>
                 </li>
               ))}
             </ul>
-            {SelectedInstrumentName!="" && (
+            {openForm && (
               <div className="Instrument_form">
-                <Instrument_Component name={SelectedInstrumentName} RefNo={SelectedInstrumentRefNo} Location={MarkerData.location} closeForm={SelectedInstrumentName}/>
+                <Instrument_Component info={info} closeForm={setopenForm}/>
+              </div>
+            )}
+            {openEntries && (
+              <div className="Values_List">
+                <Show_Entry info={info} onClose={setopenEntries}/>
               </div>
             )}
           </div>

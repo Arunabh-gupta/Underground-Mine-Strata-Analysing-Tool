@@ -1,0 +1,108 @@
+/* Show_Entry.css */
+
+/* Background overlay */
+.Show_Entry_Background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Modal content container */
+  .Show_Entry_Content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 800px; /* Set a fixed width for the modal */
+    max-height: 600px; /* Set a max height for the modal */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Added position for Close button positioning */
+  }
+  
+  /* Close button */
+  .Close_Button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff; /* Change the background color to red */
+    color: #272727; /* Text color */
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px; /* Padding for better visibility */
+    border-radius: 4px;
+    outline: none;
+  }
+  .Close_Button:hover {
+    background-color: #959595; /* Change the background color on hover to a different color (e.g., red) */
+  }
+  
+  /* Instrument information section */
+  .Instrument_info {
+    margin-bottom: 20px;
+    background-color: #ececec;
+    border-radius: 3px;
+  }
+  .Instrument_info p{
+    margin-left: 10px;
+  }
+  /* Data List container */
+  .Data-Container {
+    flex: 1; /* Allow it to take up remaining space */
+  }
+  
+  /* Data List header */
+  .Data-List h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Data block layout */
+  .data-block {
+    display: flex;
+    justify-content: space-between; /* Align items to the start and end of the container */
+    align-items: center; /* Vertically align items */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Adjust spacing for data-item */
+  .data-item {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px; /* Add some spacing between Date and Value */
+  }
+  .data-item span, button, label{
+    margin-left: 30px;
+  }
+  .data-item input{
+    margin-left: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

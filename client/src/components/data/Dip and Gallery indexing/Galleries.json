@@ -1,0 +1,10 @@
+[
+    {
+        "label": "L1",
+        "displayPoint": {"x": 25, "y" : 310}
+    },
+    {
+        "label": "L2",
+        "displayPoint": {"x": 25, "y" : 630}
+    }
+]

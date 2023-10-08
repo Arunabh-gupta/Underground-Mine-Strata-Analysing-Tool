@@ -1,0 +1,19 @@
+[
+    {
+      "label": "D1",
+      "displayPoint": { "x": 315, "y": 40 }
+    },
+    {
+      "label": "D2",
+      "displayPoint": { "x": 625, "y": 40 }
+    },
+    {
+      "label": "D3",
+      "displayPoint": { "x": 935, "y": 40 }
+    },
+    {
+      "label": "D4",
+      "displayPoint": { "x": 1245, "y": 40 }
+    }
+  ]
+  

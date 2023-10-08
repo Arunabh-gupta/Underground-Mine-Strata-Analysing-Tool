@@ -1,23 +1,23 @@
 import React from 'react'
 import '../Auto_Warning_Tell_Tale/Auto_Warning_Tell_Tale.css'
-function Auto_Warning_Tell_Tale_form({ name, RefNo, Location, closeForm }) {
+function Auto_Warning_Tell_Tale_form({ info, closeForm }) {
 
   return (
     <>
       <div className="Form_Background">
-        <form action="" method="post">
+        <form action="">
           <div className="Form_Container">
             <div className="closeButton">
               <button onClick={() => closeForm(null)}>X</button>
             </div>
             <div className="Name">
-              <span>{name}</span>
+              <span>{info.name}</span>
             </div>
             <div className="RefNo">
-              <span>RefNo. {RefNo}</span>
+              <span>RefNo. {info.RefNo}</span>
             </div>
             <div className="Location">
-              <span>Location: {Location}</span>
+              <span>Location: {info.Location}</span>
             </div>
             <div className="formBody">
               <div className="Date">

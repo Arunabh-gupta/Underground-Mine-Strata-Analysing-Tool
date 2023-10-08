@@ -1,0 +1,54 @@
+/* Header.css */
+
+.header {
+    background-color: #444; /* Background color for the header */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .header-left h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .header-left h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .header-left h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .header-right h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .header-right h4 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  /* Add some spacing between the left and right sections */
+  .header-left {
+    margin-right: 20px;
+  }
+  
+  /* Style for the right section */
+  .header-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for the right section headings */
+  .header-right h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
