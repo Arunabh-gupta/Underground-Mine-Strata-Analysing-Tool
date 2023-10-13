@@ -57,7 +57,7 @@ function Pillar_layout({ pillar_data, instrument_data }) {
                   {dip.label}
                </text>
             ))}
-
+            {/* Rendering Gallery Labels */}
             {GALLERIES.map((gallery, index) => (
                <text x={gallery.displayPoint.x} y={gallery.displayPoint.y} fill="black" key={index}>
                   {gallery.label}

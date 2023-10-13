@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../Navbar/Navbar.css'
 import locations from '../data/Locations.json'
-import Pillar_layout from '../Pillar_layout';
+import Roof_Fall_Info from '../Roof fall /Roof_Fall_Info';
+
 function Navbar({setselectedMarker, instrument_data}) {
   // Define state for the selected option in each dropdown
   const [selectedLocation, setSelectedLocation] = useState('');
@@ -69,6 +70,11 @@ function Navbar({setselectedMarker, instrument_data}) {
             </option>
           ))}
         </select>
+        {selectedRoofFall && (
+          <div className='roofFall'>
+            <Roof_Fall_Info closeInfoPopup={setSelectedRoofFall} info={info}/>
+          </div>
+        )}
       </div>
       
     </div>
