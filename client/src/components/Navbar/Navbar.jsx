@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import '../Navbar/Navbar.css'
 import locations from '../data/Locations.json'
-import Roof_Fall_Info from '../Roof fall /Roof_Fall_Info';
+import Roof_Fall_Info from '../Roof_fall /Roof_Fall_Data_Form';
+import Add_Daily_extraction from '../Add_Daily_Extraction/Add_Daily_extraction';
+import Roof_Fall_Data_Form from '../Roof_fall /Roof_Fall_Data_Form';
 
 function Navbar({setselectedMarker, instrument_data}) {
   // Define state for the selected option in each dropdown
   const [selectedLocation, setSelectedLocation] = useState('');
   const [selectedRoofFall, setSelectedRoofFall] = useState('');
-
+  const [addDailyExtractionForm, setaddDailyExtractionForm] = useState(null);
+  const [addRoofFallDataFrom, setaddRoofFallDataForm] = useState(null)
   // Define the options for the "Find Location" and "Roof Falls" dropdowns
   const locationOptions = locations;
 
@@ -38,6 +41,10 @@ function Navbar({setselectedMarker, instrument_data}) {
     setSelectedRoofFall(event.target.value);
   };
 
+  // Handle Roof fall form
+  const handleRoofFallForm = ()=>{
+    setSelectedRoofFall(true);
+  }
   return (
     <div className="navbar">
       <div className="dropdown">
@@ -76,7 +83,22 @@ function Navbar({setselectedMarker, instrument_data}) {
           </div>
         )}
       </div>
-      
+      <div className='addDailyExtraction'>
+          <button onClick={setaddDailyExtractionForm}>Add Daily Extraction Data</button>
+      </div>
+      {addDailyExtractionForm && 
+        <div className="DailyExtractionForm">
+          <Add_Daily_extraction closeForm={setaddDailyExtractionForm} />
+        </div>
+      }
+      <div className="AddRoofFallData">
+        <button onClick={setaddRoofFallDataForm}>Add Roof Fall Info</button>
+      </div>
+      {addRoofFallDataFrom &&
+        <div className="RoofFallDataForm">
+          <Roof_Fall_Data_Form closeForm={setaddRoofFallDataForm}/>
+        </div> 
+      }
     </div>
   );
 }
